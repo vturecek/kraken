@@ -1,0 +1,10 @@
+[Unit]
+Description=Kraken X72 init and monitor
+
+[Service]
+TimeoutStartSec=0
+Restart=always
+ExecStart=/usr/local/sbin/kraken.sh
+
+[Install]
+WantedBy=multi-user.target
